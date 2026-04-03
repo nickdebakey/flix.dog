@@ -10,11 +10,6 @@ body {
   transition: 0.5s;
 }
 
-.red {
-  color: #7a0001;
-  display: inline-flex;
-}
-
 a {
   color: #fc822a;
   text-decoration: none;
@@ -115,11 +110,15 @@ width: 50%;
   border: none;
 }
 
-.socialsBtn a {
+.socialLinks {
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   color: #fff;
+}
+
+.socialLinksLight {
+  color: #567;
 }
 
 #twt {
@@ -135,4 +134,21 @@ width: 50%;
 #discord {
   background-color: #48bbf0;
   color: #fff;
+}
+
+/* phone/mobile adjustment for the two columns */
+@media only screen and (max-width: 768px) {
+  .parentColumn {
+    text-align: center;
+    display: block;
+  }
+
+  .childColumn {
+  display: inline-block;
+  width: 100%;
+}
+
+  #commission {
+    max-width: 50%;
+  }
 }

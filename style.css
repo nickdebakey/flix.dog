@@ -59,6 +59,14 @@ a:visited {
   color: #fc822a;
 }
 
+#darkModeBtn p {
+  margin: 0rem;
+}
+
+#sun {
+  display: none;
+}
+
 .parentColumn {
 text-align: center;
 display: flex;
@@ -103,11 +111,12 @@ justify-content: space-evenly;
 }
 
 .socialsBtn {
-margin: 1rem;
-padding: 1rem;
-width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  width: 50%;
   border-radius: 0.5rem;
   border: none;
+  justify-content: center;
 }
 
 .socialLinks {
@@ -117,7 +126,15 @@ width: 50%;
   color: #fff;
 }
 
+.socialLinks:visited {
+  color: #fff;
+}
+
 .socialLinksLight {
+  color: #567;
+}
+
+.socialLinksLight:visited {
   color: #567;
 }
 

@@ -55,6 +55,13 @@ a:visited {
 #darkModeBtn {
   border-radius: 2rem;
   line-height: 0.4rem;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 1em;
+  transition: 0.3s;
+  border: solid #fc822a 1px;
+  color: #fc822a;
 }
 
 .parentColumn {
@@ -80,7 +87,7 @@ justify-content: space-evenly;
 }
 
 #aboutMeGreeting {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 800;
   font-size: 2rem;
 }
@@ -89,43 +96,43 @@ justify-content: space-evenly;
   width: 75%;
 }
 
+#followMeHere {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
 .socials {
-  border: #000 1px solid;
+  display: inline-block;
+  flex-direction: column;
+  width: 100%;
 }
 
-#sun {
-  font-family: monospace;
+.socialsBtn {
+margin: 1rem;
+padding: 1rem;
+width: 50%;
+  border-radius: 0.5rem;
+  border: none;
 }
 
-#otherSocials {
-  border-top: solid 0.1rem #7a0001;
+.socialsBtn a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
 }
 
-#otherSocials p {
-  margin-bottom: -0.1rem;
+#twt {
+  background-color: #fc822a;
+  color: #fff;
 }
 
-.tab {
-  overflow: hidden;
-  background-color: inherit;
-  text-align: center;
+#lbx {
+  background-color: #29df65;
+  color: #fff;
 }
 
-.tab button,
-#darkModeBtn {
-  background-color: inherit;
-  outline: none;
-  cursor: pointer;
-  padding: 1em;
-  transition: 0.3s;
-  border: solid #fc822a 1px;
-  color: #fc822a;
-}
-
-.tabcontent {
-  display: none;
-  padding: 0.5rem 1rem;
-  border-top: none;
-  text-align: center;
-  line-height: 2rem;
+#discord {
+  background-color: #48bbf0;
+  color: #fff;
 }

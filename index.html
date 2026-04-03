@@ -1,36 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>helloimflix</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <title>ontheyves</title>
+</head>
+
+<body>
     <main>
-      <!-- header -->
-      <div id="header">
-        <img src="helloimflix.png" id="headerImg" />
-        <div id="tagLine">
-          <p>
-            extended bio for
-            <a href="https://x.com/helloimflix">@helloimflix</a>
-          </p>
-          <br />
-          <button onclick="lightMode()" id="displayModeBtn">&#9790;</button>
+        <!-- header -->
+        <div id="header">
+            <img src="helloimflix.png" class="headerImgDark">
+            <img src="helloimflix-light.png" class="headerImgLight">
+            <div id="tagLine">
+                <p>extended bio for <a href="https://twitter.com/helloimflix">@helloimflix</a></p>
+                <br>
+                <button onclick="darkMode()" id="darkModeBtn">&#9790;</button>
+            </div>
         </div>
-      </div>
-      <!-- pic of meeeee -->
-      <div id="headerDivider">
-        <!-- pic of me goes here-->
-      </div>
-      <!-- social links -->
-      <p>wanna be friends?</p>
-      <button>twitter</button>
-      <button>letterboxd</button>
-      <button>discord</button>
+        <!-- two column comission / about me -->
+        <div class="parentColumn">
+            <!--- commission side -->
+            <div class="childColumn">
+                <image src="halloweenflix.PNG" id="commission"></image>
+            </div>
+            <!-- about me side -->
+            <div class="childColumn">
+                <div class="aboutMe">
+                <p><span id="aboutMeGreeting">HELLO, I'M FLIX !</span>
+                <hr class="aboutMeHr"> 28 🎂 | puppy 🐶 | cinephile 🍿 | gay 🏳️‍🌈 | he/him ♂️
+                <br> developer 🤓 | dbd enthusiast 🔪 | bear lover 🐻
+                <hr class="aboutMeHr"> it's nice to meet you or see you again 
+                <br> i'm new to the fandom and looking for more friends !
+                </div>
+            </div>
+        </div>
+        <!-- tabs div -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'aboutMe')">about me</button>
+            <button class="tablinks" onclick="openTab(event, 'stanList')">stan list</button>
+        </div>
+        <!-- tab content -->
+        <div id="aboutMe" class="tabcontent">
+            <div id="info">
+                <p>
+                    nick / 23
+                    <br>
+                    usa
+                    <br>
+                    he / him / his
+                    <br>
+                    homosexual
+                    <br>
+                <div class="red" id="sun">&#9728;</div> gemini / <div class="red">&#9789;</div> virgo / <div
+                    class="red">&#10023;</div> cancer
+                </p>
+            </div>
+            <div id="otherSocials">
+                <p>other socials:</p>
+                <a href="https://twitter.com/cuttothefeelin">main twitter</a>
+                <br>
+                <a href="https://instagram.com/ontheyves">instagram</a>
+                <br>
+                <a href="https://depop.com/ndebakey">depop</a>
+            </div>
+        </div>
+        <div id="stanList" class="tabcontent">
+            <div id="stanListHolder">
+                <div id="girlGroups">
+                    <p>girl groups:</p>
+                    <ul>
+                        <li>
+                            <div class="red"><b>loona &#10025; ult</b></div>
+                        </li>
+                        <li>yukika</li>
+                        <li>itzy</li>
+                        <li>rocket punch</li>
+                        <li>iz*one</li>
+                        <li>blackpink</li>
+                        <li>gwsn</li>
+                        <li>twice</li>
+                        <li>red velvet</li>
+                        <li>saturday</li>
+                        <li>natty</li>
+                        <li>everglow</li>
+                        <li>cignature</li>
+                        <li>dreamnote</li>
+                        <li>april</li>
+                        <li>chung ha</li>
+                        <li>sunmi</li>
+                        <li>fromis_9</li>
+                    </ul>
+                </div>
+                <div id="boyGroups">
+                    <p>boy groups:</p>
+                    <ul>
+                        <li>
+                            <div class="red"><b>bts &#10025; ult</b></div>
+                        </li>
+                        <li>nct</li>
+                        <li>monsta x</li>
+                        <li>txt</li>
+                        <li>superm</li>
+                        <li>exo</li>
+                        <li>got7</li>
+                        <li>seventeen</li>
+                        <li>ateez</li>
+                        <li>shinee</li>
+                        <li>onf</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>

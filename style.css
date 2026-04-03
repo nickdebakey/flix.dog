@@ -1,31 +1,128 @@
 body {
-    background-color: #556677;
-    color: #ffffff;
+  background-color: #567;
+  color: white;
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: 0.5s;
 }
 
-.light-mode {
-    background: #ffffff
-    color: #556677
-    transition: 1s;
+.red {
+  color: #7a0001;
+  display: inline-flex;
 }
 
-#displayModeBtn {
-    border-radius: 2rem;
-    line-height: 0.4rem;
+a {
+  color: #fc822a;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fc822a;
+  text-decoration: none;
 }
 
 #header {
-    text-align: center;
+  text-align: center;
 }
 
-#headerImg {
-    max-width: 90%;
+#header img {
+  max-width: 90%;
 }
 
-.lightMode {
-    visibility: hidden;
+.headerImgLight {
+  display: none;
 }
 
-.darkMode {
-    visibility: visible;
+#tagLine {
+  letter-spacing: 0.25rem;
+}
+
+#tagLine a {
+  text-decoration: none;
+  color: #fc822a;
+}
+
+.dark-mode {
+  background-color: white;
+  color: #567;
+  transition: 0.5s;
+}
+
+#darkModeBtn {
+  border-radius: 2rem;
+  line-height: 0.4rem;
+}
+
+.parentColumn {
+text-align: center;
+display: flex;
+align-items: stretch;
+justify-content: space-evenly;
+}
+
+.childColumn {
+  border: 1px solid #000;
+  display: inline-block;
+  width: 50%;
+}
+
+#commission {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+#aboutMe {
+  letter-spacing: 0.25rem;
+  display: inline-block;
+}
+
+#aboutMeGreeting {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.aboutMeHr {
+  width: 75%;
+}
+
+#sun {
+  font-family: monospace;
+}
+
+#otherSocials {
+  border-top: solid 0.1rem #7a0001;
+}
+
+#otherSocials p {
+  margin-bottom: -0.1rem;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: inherit;
+  text-align: center;
+}
+
+.tab button,
+#darkModeBtn {
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+  padding: 1em;
+  transition: 0.3s;
+  border: solid #fc822a 1px;
+  color: #fc822a;
+}
+
+.tabcontent {
+  display: none;
+  padding: 0.5rem 1rem;
+  border-top: none;
+  text-align: center;
+  line-height: 2rem;
 }

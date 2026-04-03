@@ -1,0 +1,31 @@
+body {
+    background-color: #556677;
+    color: #ffffff;
+}
+
+.light-mode {
+    background: #ffffff
+    color: #556677
+    transition: 1s;
+}
+
+#displayModeBtn {
+    border-radius: 2rem;
+    line-height: 0.4rem;
+}
+
+#header {
+    text-align: center;
+}
+
+#headerImg {
+    max-width: 90%;
+}
+
+.lightMode {
+    visibility: hidden;
+}
+
+.darkMode {
+    visibility: visible;
+}

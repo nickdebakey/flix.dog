@@ -60,7 +60,8 @@ a:visited {
 }
 
 #darkModeBtn p {
-  margin: 0rem;
+  margin: 0.25rem;
+  font-size: 1rem;
 }
 
 #sun {

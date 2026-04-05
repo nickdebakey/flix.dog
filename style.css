@@ -130,17 +130,17 @@ justify-content: space-evenly;
   color: #567;
 }
 
-#twt {
+#twt, #telegram {
   background-color: #fc822a;
   color: #fff;
 }
 
-#lbx {
+#discord, #bluesky {
   background-color: #29df65;
   color: #fff;
 }
 
-#discord {
+#lbx {
   background-color: #48bbf0;
   color: #fff;
 }
@@ -159,6 +159,23 @@ justify-content: space-evenly;
 }
 
   #commission {
-    max-width: 50%;
+    max-width: 25%;
   }
+
+  .socials {
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+
+  .socialsBtn {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 100%%;
+  border-radius: 0.5rem;
+  border: none;
+  justify-content: center;
+}
+
 }

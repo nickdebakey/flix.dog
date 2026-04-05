@@ -62,18 +62,20 @@ a:visited {
 .parentColumn {
 text-align: center;
 display: flex;
-align-items: stretch;
-justify-content: space-evenly;
+justify-content: center;
+align-content: center;
 }
 
 .childColumn {
   display: inline-block;
   width: 50%;
+  justify-content: center;
+align-content: center;
 }
 
 #commission {
   padding: 1rem;
-  max-width: 100%;
+  max-width: 80%;
 }
 
 #aboutMe {
@@ -103,9 +105,9 @@ justify-content: space-evenly;
 }
 
 .socialsBtn {
-  margin: 1rem;
-  padding: 1rem;
-  width: 50%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 75%;
   border-radius: 0.5rem;
   border: none;
   justify-content: center;
@@ -172,10 +174,14 @@ justify-content: space-evenly;
   .socialsBtn {
   margin: 0.5rem;
   padding: 0.5rem;
-  width: 100%%;
+  width: 75%;
   border-radius: 0.5rem;
   border: none;
   justify-content: center;
+}
+
+.childColumn {
+  width: 75%;
 }
 
 }

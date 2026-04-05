@@ -161,7 +161,7 @@ align-content: center;
 }
 
   #commission {
-    max-width: 25%;
+    max-width: 55%;
   }
 
   .socials {
@@ -180,9 +180,9 @@ align-content: center;
   justify-content: center;
 }
 
-.childColumn {
-  width: 75%;
-}
+  #header img {
+    max-width: 60%;
+  }
 
 }
 

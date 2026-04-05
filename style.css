@@ -185,3 +185,31 @@ align-content: center;
 }
 
 }
+
+@media only screen and (min-width: 900px) {
+
+  #header img {
+    max-width: 60%;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+  #header img {
+    max-width: 40%;
+  }
+  
+}
+
+@media only screen and (min-width: 1700px) {
+
+  #header img {
+    max-width: 20%;
+  }
+
+  #commission {
+    max-width: 70%;
+  }
+  
+}
